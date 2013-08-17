@@ -22,7 +22,6 @@ function Update () {
 		// Action button pressed			
 		if(touch.phase == TouchPhase.Began && actionButton.HitTest(touch.position)) {
 			levelScript.ActionResponse();
-			Application.LoadLevel(1);
 		}
 		// --
 	}
