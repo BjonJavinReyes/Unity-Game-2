@@ -35,36 +35,13 @@ static var playerProgress = new Hashtable();
 // --
 
 function Start () {
-
-	if(PlayerPrefs.HasKey("playerX") && PlayerPrefs.HasKey("playerY") && PlayerPrefs.HasKey("playerZ")) {
-		
-		
-	}
-	
-	if(PlayerPrefs.HasKey("cameraX") && PlayerPrefs.HasKey("cameraY") && PlayerPrefs.HasKey("cameraZ")) {
-
-		
-		cam.position =  Vector3(PlayerPrefs.GetFloat("cameraX"), PlayerPrefs.GetFloat("cameraY"), PlayerPrefs.GetFloat("cameraZ"));
-		cam.rotation =  Quaternion.Euler(PlayerPrefs.GetFloat("camRotX"), PlayerPrefs.GetFloat("camRotY"), PlayerPrefs.GetFloat("camRotZ"));
-
-		
-	}
  
 	selectedItem = null;
 	interactPuzzleObject = false;
 }
 
 function Update () {
-	updatePlayerPosition();
-	
-	Debug.Log(player.transform.position);
-}
 
-function updatePlayerPosition(){
-
-
-
-		
 }
 
 function ActionResponse(){
