@@ -112,7 +112,6 @@ function cannotGetObject(item){
 
 function openInventory(){
 	inventory.transform.position.y += 0.1;
-	PlayerPrefs.DeleteAll();
 }
 
 function closeInventory(){
